@@ -10,7 +10,6 @@ public class CanConstruct {
             charCount.put(current, charCount.getOrDefault(current, 0) + 1);
         }
 
-
         for (char current : ransomNote.toCharArray()) {
             if (!(charCount.containsKey(current)) || charCount.get(current) == 0) {
                 return false;
